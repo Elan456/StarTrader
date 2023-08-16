@@ -1,5 +1,6 @@
 import random
-import ship_validation
+import ship.validation
+
 
 class Floater:
     """

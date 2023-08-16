@@ -1,10 +1,29 @@
 import pygame
 import utils as yseful
 import mainGui
-import moduleManager
+from module import moduleManager
 import routeMap
 from routeMap import SystemManager
-from moduleManager import allModules
+from module.moduleManager import allModules
+
+# """
+# Emergency Fix
+# Repickling all the enemy ships
+# """
+# import pickle
+# import os
+#
+# for enemy_ship in os.listdir("enemyships"):
+#     ship = pickle.load(open("enemyships/" + enemy_ship, "rb"))
+#     dict_ship = [m.__dict__ for m in ship]
+#     pickle.dump(dict_ship, open("enemyships/" + enemy_ship, "wb"))
+#
+# exit()
+# """
+# Delete all that is above
+# """
+
+
 
 
 pygame.init()
@@ -118,12 +137,12 @@ for m in moduleManager.allModules:  # Creates the shop buttons
     if m != "Core":
 
         allModules[m]["buybutton"] = yseful.Button(gameDisplay, [x - 20, realy, 30, 30], "+", black, 40, moduleManager.buyorsell, (0, 200, 0),
-                      (0, 255, 0),
-                      arg=(routeMap.ps, "buy", allModules[m]["Name"], Viewer))
+                                                   (0, 255, 0),
+                                                   arg=(routeMap.ps, "buy", allModules[m]["Name"], Viewer))
 
 
         allModules[m]["sellbutton"] = yseful.Button(gameDisplay, [x + 10, realy, 30, 30], "-", black, 40, moduleManager.buyorsell, (200, 0, 0),
-                      (255, 0, 0), arg=(routeMap.ps, "sell", allModules[m]["Name"], Viewer))
+                                                    (255, 0, 0), arg=(routeMap.ps, "sell", allModules[m]["Name"], Viewer))
 
 
 # Button for upgrading the hanger size
@@ -228,7 +247,7 @@ while True:
             Viewer.y = 1900
 
 
-        gameDisplay.blit(moduleManager.storePageSurface, (0, 0-Viewer.y))
+        gameDisplay.blit(moduleManager.storePageSurface, (0, 0 - Viewer.y))
         yseful.button(gameDisplay, [1920-50, 1080-50, 50, 50], "\/", white, 20, scrolldown, (0, 0, 200), (0, 0, 255))
         yseful.button(gameDisplay, [1920 - 100, 1080 - 50, 50, 50], "/\\", white, 20, scrollup, (0, 0, 200),
                       (0, 0, 255))

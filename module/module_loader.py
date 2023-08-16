@@ -2,7 +2,7 @@ import pandas as pd
 import pygame
 
 def get_all_modules():
-    pdModules = pd.read_excel("Modules.ods", engine="odf")
+    pdModules = pd.read_excel("module/Modules.ods", engine="odf")
     dictModules = pdModules.to_dict('index')
 
     allModules = {}

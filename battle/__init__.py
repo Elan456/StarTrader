@@ -1,6 +1,6 @@
 import pickle
-import module_loader
-from ship import Ship
+from module import module_loader
+from battle.ship import Ship
 import pygame
 import utils as yseful
 
@@ -41,12 +41,12 @@ class BattleModule:
 
 
 def load_enemy_ship(name="5k"):
-    loadship = pickle.load(open(f"enemyships\\{name}", "rb"))
+    loadship = pickle.load(open(f"enemyships/{name}", "rb"))
     # Load ship is a list of simple module
     # objects, so we need to convert them
     modules = []
     for m in loadship:
-        modules.append(BattleModule(m.name, (m.x, m.y)))
+        modules.append(BattleModule(m["name"], (m['x'], m['y'])))
 
     ship = Ship(modules)
     ship.battle_mods = modules

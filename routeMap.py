@@ -3,8 +3,8 @@ from pygame import gfxdraw
 import utils as yseful
 import random
 import math as m
-import moduleManager
-from ship import Ship
+from module import moduleManager
+from battle.ship import Ship
 import os
 from battle import Battle
 
@@ -38,7 +38,6 @@ for file in os.listdir("enemyships"):
 
 # Sorting enemy_options by cost
 enemy_options.sort(key=lambda x: x[0])
-print(enemy_options)
 
 # width, height, cost to upgrade to the next one
 hanger_levels = {1: (5, 2, 2e3),

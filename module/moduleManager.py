@@ -2,9 +2,9 @@ import pygame
 import utils as yseful
 import random
 import pickle
-import module_loader
-from ship_validation import checkValidBuild
-import ship as ship_module
+from module import module_loader
+from ship.validation import checkValidBuild
+import battle.ship as ship_module
 
 
 storePageSurface = pygame.Surface((1920, 3000), pygame.SRCALPHA)

@@ -9,7 +9,7 @@
    3. [Ship Building](#ship-building)
    4. [Route Management](#route-management)
    5. [Battle](#battle)
-4. [Upcoming Features](#)
+4. [Upcoming Features](#upcoming-features)
 ***
 
 ## Introduction
@@ -55,7 +55,7 @@ Purchase:
    * 1 rock thrower
 2. Let's assemble our ship. Click on the *Build* button in the bottom left corner
 3. Click and drag on each module and place it on the grid as you like  
-Example: ![First ship example](link_here)
+Example: ![First ship example](https://github.com/Elan456/StarTrader/blob/7504c7963885438fc0ce00cdc24727312a569613/assets/first_ship.png)
 4. Let's go do a route. Click on the *Route* button in the bottom left corner.
 5. Here, you can move between systems for free by clicking on connected systems or
 use the route selection menu on the right to carry cargo. See the [Route Management](#route-management)

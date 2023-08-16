@@ -3,7 +3,7 @@ import utils as yseful
 
 
 
-bannerimg = pygame.image.load("Headergui.png")
+bannerimg = pygame.image.load("assets/Headergui.png")
 
 set_insurance = 20
 insurance_change = False

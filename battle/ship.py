@@ -1,7 +1,7 @@
-import projectile
 import pygame
-from ship_validation import get_disconnected_modules
+from ship.validation import get_disconnected_modules
 from floating_module import Floater
+from battle.projectile import Projectile
 
 def getTotalHealth(mods):
     c = 0
@@ -105,8 +105,6 @@ class Ship:
         if self.keep_moving:
             self.move(self.direction)
 
-        pygame.draw.rect(Viewer.gameDisplay, (255, 0, 0), (self.x, self.y, 384, self.width), 1)
-
     def battle_topleft(self):
         min_x = min([m.x for m in self.battle_mods])
         min_y = min([m.y for m in self.battle_mods])
@@ -126,18 +124,18 @@ class Ship:
                 m.x = 1184 - (m.x + m.width) + 801
                 m.x = int(m.x / 32) * 32 + 1
 
-    def spawn_projectiles(self, battle_tick, target_ship) -> list[projectile.Projectile]:
+    def spawn_projectiles(self, battle_tick, target_ship):
         # If rounds per second (RPS) is 2 then it needs to shoot every 30 ticks
         new_projectiles = []
         for m in self.battle_mods:
             width, height = m.naturalValues["Image"].get_width(), m.naturalValues["Image"].get_height()
             if m.naturalValues["Category"] == "weapons":
                 if battle_tick % max((60 / m.naturalValues['RPS']), 1) == 0:
-                    new_projectiles.append(projectile.Projectile(m.naturalValues,
+                    new_projectiles.append(Projectile(m.naturalValues,
                                                                  target_ship,
                                                                  m.x + self.x + width / 2,
                                                                  m.y + self.y + height / 2,
-                                           self.team))
+                                                                 self.team))
         return new_projectiles
 
     def find_my_guns(self):
