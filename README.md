@@ -23,11 +23,17 @@ and cosmic exploration.
 
 ## Installation
 
-Currently, the game is not yet packaged into an executable. Instead, you will need to clone this repository and run
-`main.py` with a python interpreter.
+Currently, the game is only packaged as an executable for Windows. Linux and Mac users will need to clone this repository and run
+`main.py` with a Python interpreter instead.
 
 ***The game has only been tested on 1920x1080 displays***
 
+
+#### Windows
+1. Download the latest release from [here](https://github.com/Elan456/StarTrader/releases)
+2. Extract StarTrader.zip and run `main.exe`
+
+#### Linux/Mac
 1. Clone the repository to your local machine.  
     `git clone https://github.com/Elan456/StarTrader.git`
 2. Navigate inside the repository  
