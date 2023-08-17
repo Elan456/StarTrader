@@ -7,3 +7,5 @@
 /StarTrader/
 /main.spec
 /StarTrader.zip
+__pycache__/
+/.idea/
