@@ -5,6 +5,7 @@ from module import moduleManager
 import routeMap
 from routeMap import SystemManager
 from module.moduleManager import allModules
+import sys
 
 # """
 # Emergency Fix
@@ -160,7 +161,7 @@ while True:
         keystates = yseful.basicinput(event, keystates)
         if event.type == pygame.KEYDOWN and event.key == pygame.K_ESCAPE:
             pygame.quit()
-            quit()
+            sys.exit()
         # if event.type == pygame.KEYDOWN and event.key == pygame.K_b:
         #     if mode == "battle":
         #         mode = "shop"

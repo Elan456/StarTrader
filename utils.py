@@ -286,7 +286,7 @@ def basicinput(event, keystates):
             keystates.space = True
         if event.key == pygame.K_ESCAPE:
             pygame.quit()
-            quit()
+            # quit()
     if event.type == pygame.KEYUP:
         if event.key == pygame.K_a:
             keystates.a = False

@@ -1,3 +1,9 @@
 /stats.txt
 /save.p
 /venv/
+/dist/
+/build/
+*.exe
+/StarTrader/
+/main.spec
+/StarTrader.zip

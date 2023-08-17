@@ -91,7 +91,7 @@ class Floater:
                 self.battle_module.y = round(self.battle_module.y / 32) * 32
 
                 # If it is valid then leave it there and add it otherwise, add velocity to it and let it float away
-                if not ship_validation.would_overlap(battle.player_ship, self.battle_module):
+                if not ship.validation.would_overlap(battle.player_ship, self.battle_module):
                     # raise Exception("Need to check if it is connected")
                     self.battle_module.x -= battle.player_ship.x
                     self.battle_module.y -= battle.player_ship.y
