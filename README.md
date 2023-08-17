@@ -29,7 +29,7 @@ Currently, the game is not yet packaged into an executable. Instead, you will ne
 ***The game has only been tested on 1920x1080 displays***
 
 1. Clone the repository to your local machine.  
-    `git clone ...`
+    `git clone https://github.com/Elan456/StarTrader.git`
 2. Navigate inside the repository  
    `cd StarTrader`
 3. Download required Python libraries  
@@ -54,18 +54,20 @@ Purchase:
    * 1 poor container
    * 1 rock thrower
 2. Let's assemble our ship. Click on the *Build* button in the bottom left corner
-3. Click and drag on each module and place it on the grid as you like  
-Example: ![First ship example](https://github.com/Elan456/StarTrader/blob/7504c7963885438fc0ce00cdc24727312a569613/assets/first_ship.png)
-4. Let's go do a route. Click on the *Route* button in the bottom left corner.
-5. Here, you can move between systems for free by clicking on connected systems or
+3. Click and drag on each module and place it on the grid as you like
+
+Example:  
+![First ship example](https://github.com/Elan456/StarTrader/blob/7504c7963885438fc0ce00cdc24727312a569613/assets/first_ship.png)  
+5. Let's go do a route. Click on the *Route* button in the bottom left corner.
+6. Here, you can move between systems for free by clicking on connected systems or
 use the route selection menu on the right to carry cargo. See the [Route Management](#route-management)
 section for more info. 
-6. Select a route that earns around $100 and click *go*.
-7. Once the battle starts, move up and down to avoid enemy projectiles and aim your
+7. Select a route that earns around $100 and click *go*.
+8. Once the battle starts, move up and down to avoid enemy projectiles and aim your
 weapons.
-8. Destroy the enemy core and attach any modules that come unattached to your ship.
-9. Continuing taking routes and buying more modules for your ship.
-10. There is full *save and quit* functionality, so don't be afraid to quit
+9. Destroy the enemy core and attach any modules that come unattached to your ship.
+10. Continuing taking routes and buying more modules for your ship.
+11. There is full *save and quit* functionality, so don't be afraid to quit
 and comeback. 
 
 ### Shop
